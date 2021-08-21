@@ -3,31 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
+    <link rel="stylesheet" href="./pro/css/all.css" />
     <link rel="stylesheet" href="style.css" />
     <title>novel trainer</title>
   </head>
   <body>
-    <div class="icon-holder">
+    <div class="container">
       <button id="setting-btn" class="btn">
-        <i class="fas fa-cog fa-2x"></i>
+        <i class="far fa-cog fa-2x"></i>
       </button>
     </div>
+    <!-- menu -->
+    <nav id="nav-bar" class="">
+      <!-- nav class="open" -->
+      <!-- Home menu -->
+      <div id="menu" class="container">
+        <!--div class ="container font-setting "   -->
 
-    <nav class="open">
-      <div class="container icon-holder">
-        <button id="home-btn" class="option btn"><i class="fas fa-home"></i></button>
-        <button id="font-btn" class="option btn"><i class="fas fa-font"></i></button>
-        <button id="book-btn" class="option btn"><i class="fas fa-book"></i></button>
-        <button id="bookmark-btn" class="option btn"><i class="fas fa-bookmark "></i></button>
+        <button id="home-btn" class="option btn">
+          <i class="far fa-home"></i>
+        </button>
+        <button id="font-btn" class="option btn">
+          <i class="far fa-font"></i>
+        </button>
+        <button id="book-btn" class="option btn">
+          <i class="far fa-book"></i>
+        </button>
+        <button id="bookmark-btn" class="option btn">
+          <i class="far fa-bookmark"></i>
+        </button>
         <button id="info-btn" class="option btn">
-          <i class="fas fa-info-circle"></i>
+          <i class="far fa-info-circle"></i>
+        </button>
+        <!-- Font menu -->
+        <button id="undo-btn" class="option btn">
+          <i class="fas fa-undo-alt"></i>
+        </button>
+        <button id="plus-btn" class="option btn">
+          <i class="far fa-plus-circle"></i>
+        </button>
+        <button id="minus-btn" class="option btn">
+          <i class="far fa-minus-circle"></i>
+        </button>
+        <button id="up-btn" class="option btn">
+          <i class="far fa-sort-up"></i>
+        </button>
+        <button id="down-btn" class="option btn">
+          <i class="far fa-sort-down"></i>
         </button>
       </div>
     </nav>
