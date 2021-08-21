@@ -5,6 +5,17 @@
   padding: 0;
   margin: 0;
 }
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(20, 245, 245, 0.164);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1px 8px 8px 8px;
+  border: none;
+  margin: 2px;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -13,6 +24,7 @@ body {
   height: 100vh;
 }
 
+/* Nav bar */
 nav {
   background-color: rgba(0, 99, 248, 0.425);
   width: 20vw;
@@ -31,6 +43,55 @@ nav.open {
   transform: scale(5);
   transition: transform 0.5s ease-in-out;
 }
+nav .container {
+  visibility: hidden;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+nav.open .container {
+  transform: scale(1);
+  visibility: visible;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 127, 80, 0.418);
+}
+
+nav.open .container .option {
+  position: absolute;
+}
+
+/* menu buttons */
+
+nav.open #home-btn {
+  bottom: 21%;
+  right: 8%;
+}
+
+nav.open #font-btn {
+  bottom: 15%;
+  right: 14%;
+}
+
+nav.open #book-btn {
+  bottom: 9%;
+  right: 21%;
+}
+
+nav.open #bookmark-btn {
+  bottom: 17%;
+  right: 22%;
+}
+
+nav.open #info-btn {
+  bottom: 22%;
+  right: 17%;
+}
+
+/* setting menu */
 .icon-holder {
   position: absolute;
   width: 4rem;
@@ -42,15 +103,6 @@ nav.open {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(20, 245, 245, 0.301);
-  height: 3rem;
-  width: 5rem;
-  border-radius: 8px;
 }
 
 #setting-btn {
